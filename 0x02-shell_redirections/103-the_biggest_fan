@@ -1,0 +1,2 @@
+#!/bin/bash
+awk '{print $1}' | sort | uniq | sort -nr | head -11
