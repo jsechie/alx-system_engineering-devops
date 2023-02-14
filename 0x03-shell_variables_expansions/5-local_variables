@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(declare -p) $(printenv) $(declare -f)"
+echo "$(declare -p | grep -E "^declare -[A-Za-z]+" ) $(printenv | grep -E "^declare -x [A-Za-z_]+") $(declare -f)"
